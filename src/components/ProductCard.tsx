@@ -9,6 +9,7 @@ export function ProductCard({ product }: { product: Product }) {
       className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 transition"
     >
       <div className="aspect-[4/5] overflow-hidden bg-black">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={product.images[0]}
           alt={product.title}
