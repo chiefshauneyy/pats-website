@@ -9,6 +9,10 @@ export type Product = {
   tags: string[];
   collectionHandles: string[];
   featured?: boolean;
+
+  // Tactical storefront extras (concept mode)
+  sizes?: string[];
+  specs?: string[];
 };
 
 export type Collection = {
@@ -54,6 +58,8 @@ export const products: Product[] = [
     id: "1",
     handle: "classic-logo-tee-black",
     title: "Classic Logo Tee — Black",
+    sizes: ["S", "M", "L", "XL"],
+    specs: ["Heavyweight cotton", "Standard fit", "Durable screen print", "Cold wash recommended"],
     description: "Heavyweight cotton tee. Built for everyday wear.",
     price: 34,
     compareAtPrice: 42,
@@ -68,6 +74,8 @@ export const products: Product[] = [
     id: "2",
     handle: "utility-hoodie-charcoal",
     title: "Utility Hoodie — Charcoal",
+    sizes: ["S", "M", "L", "XL"],
+    specs: ["Heavyweight cotton", "Standard fit", "Durable screen print", "Cold wash recommended"],
     description: "Premium fleece hoodie.",
     price: 68,
     images: [
@@ -90,3 +98,6 @@ export const products: Product[] = [
     collectionHandles: ["hats"],
   },
 ];
+export function getProduct(handle: string) {
+  return products.find((p) => p.handle === handle) ?? null;
+}
