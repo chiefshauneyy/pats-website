@@ -1,5 +1,4 @@
 import { getProduct } from "@/lib/catalog";
-import { formatMoney } from "@/lib/money";
 import { notFound } from "next/navigation";
 import { ProductClient } from "./ui";
 
