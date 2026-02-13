@@ -58,8 +58,8 @@ export const products: Product[] = [
     price: 34,
     compareAtPrice: 42,
     images: [
-      "https://images.unsplash.com/photo-1520975682031-a09e95b90ad6?auto=format&fit=crop&w=1600&q=80",
-    ],
+  "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1600&q=80",
+  ],
     tags: ["Heavyweight"],
     collectionHandles: ["new", "tees"],
     featured: true,
