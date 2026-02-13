@@ -6,21 +6,21 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.handle}`}
-      className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] hover:border-white/25 hover:-translate-y-1 transition duration-300"
+      className="group block overflow-hidden rounded-md border border-white/10 bg-[#111713] hover:border-zinc-400 transition duration-200"
     >
       <div className="aspect-[4/5] overflow-hidden bg-black">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={product.images[0]}
           alt={product.title}
-          className="h-full w-full object-cover group-hover:scale-105 transition duration-300"
+          className="h-full w-full object-cover opacity-95 group-hover:opacity-100 transition duration-200"
         />
       </div>
 
       <div className="p-4">
         <div className="flex justify-between text-sm font-medium">
-          <span>{product.title}</span>
-          <span>{formatMoney(product.price)}</span>
+          <span className="text-zinc-100">{product.title}</span>
+          <span className="text-zinc-200">{formatMoney(product.price)}</span>
         </div>
       </div>
     </Link>

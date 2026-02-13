@@ -8,29 +8,28 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
       {/* =========================
-    HERO SECTION
+    HERO SECTION (TACTICAL)
 ========================= */}
-<section className="mb-24 pt-16 border-b border-white/5 pb-20">
+<section className="mb-24 pt-20 border-b border-white/5 pb-24">
   <div className="max-w-3xl">
-    <div className="text-xs tracking-[0.3em] uppercase text-white/40">
-      EST. 2026
+    <div className="text-xs tracking-[0.35em] uppercase text-zinc-400">
+      BUILT WITH PURPOSE
     </div>
 
-    <h1 className="mt-6 text-6xl font-semibold leading-[1.05] tracking-tight">
-      Built Different.
+    <h1 className="mt-6 text-6xl font-bold leading-[1.05] tracking-tight uppercase">
+      No Compromise.
     </h1>
 
-    <p className="mt-6 max-w-xl text-lg text-white/60 leading-relaxed">
-      Modern cuts. Heavyweight fabric. Clean execution.
-      This is a concept build to approve the direction
-      before we connect payments.
+    <p className="mt-6 max-w-xl text-lg text-zinc-400 leading-relaxed">
+      Durable fabrics. Clean execution. No distractions.
+      Designed for those who carry themselves with discipline.
     </p>
 
     <Link
       href="/collections"
-      className="mt-10 inline-flex items-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-black hover:opacity-90 transition"
+      className="mt-10 inline-flex items-center border border-zinc-400 px-8 py-3 text-sm font-semibold uppercase tracking-wider hover:bg-zinc-100 hover:text-black transition"
     >
-      Explore Collection →
+      Shop The Line
     </Link>
   </div>
 </section>
