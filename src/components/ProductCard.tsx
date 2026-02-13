@@ -6,7 +6,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/products/${product.handle}`}
-      className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:border-white/20 transition"
+      className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] hover:border-white/25 hover:-translate-y-1 transition duration-300"
     >
       <div className="aspect-[4/5] overflow-hidden bg-black">
         {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -8,31 +8,32 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
       {/* =========================
-          HERO SECTION
-         ========================= */}
-      <section className="mb-20 pt-12">
-        <div className="max-w-3xl">
-          <div className="text-xs tracking-[0.3em] uppercase text-white/40">
-            EST. 2026
-          </div>
+    HERO SECTION
+========================= */}
+<section className="mb-24 pt-16 border-b border-white/5 pb-20">
+  <div className="max-w-3xl">
+    <div className="text-xs tracking-[0.3em] uppercase text-white/40">
+      EST. 2026
+    </div>
 
-          <h1 className="mt-6 text-6xl font-semibold leading-[1.1] tracking-tight">
-            Built Different.
-          </h1>
+    <h1 className="mt-6 text-6xl font-semibold leading-[1.05] tracking-tight">
+      Built Different.
+    </h1>
 
-          <p className="mt-6 max-w-xl text-lg text-white/60">
-            Modern cuts. Heavyweight fabric. Clean execution. This is a concept build to approve the
-            direction before we connect payments.
-          </p>
+    <p className="mt-6 max-w-xl text-lg text-white/60 leading-relaxed">
+      Modern cuts. Heavyweight fabric. Clean execution.
+      This is a concept build to approve the direction
+      before we connect payments.
+    </p>
 
-          <Link
-            href="/collections"
-            className="mt-8 inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold text-black hover:opacity-90 transition"
-          >
-            Explore Collection
-          </Link>
-        </div>
-      </section>
+    <Link
+      href="/collections"
+      className="mt-10 inline-flex items-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-black hover:opacity-90 transition"
+    >
+      Explore Collection →
+    </Link>
+  </div>
+</section>
 
       {/* =========================
           FEATURED PRODUCTS
